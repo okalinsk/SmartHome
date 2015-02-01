@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+    <form action="{{ url_for('power') }}" method=post class=add-entry>
+      <div class="span4 offset4 text-center">
+          <h1>{{ tv_state }}</h1>
+          <button type="submit" class="btn btn-lg {% if tv_on %} btn-danger {% else %} btn-success {% endif %}" aria-label="Power" name="Action" value="Power">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+          </button>
+          <button type="submit" class="btn btn-primary btn-lg" aria-label="Music" name="Action" value="Music">
+                <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+          </button>
+      </div>
+    </form>
+{% endblock %}
