@@ -30,4 +30,5 @@ def power():
 
 
 if __name__ == '__main__':
+    arduino.init()
     app.run(host='0.0.0.0')
