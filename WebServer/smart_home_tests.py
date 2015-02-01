@@ -11,7 +11,7 @@ class SmartHomeTestCase(unittest.TestCase):
     def tearDown(self):
         pass
 
-    @patch('xbmc.start_music')
+    @patch('xbmc.Xbmc.start_music')
     def test_play_music(self, xbmc_music_mock):
         self.app.post('/', data=dict(Action='Music'))
         assert xbmc_music_mock.called

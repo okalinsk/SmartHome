@@ -11,3 +11,5 @@ Consists of 3 parts:
 Currently supports:
 * Turn Tv on\off
 * Play music
+
+Note: To use XBMC, update credentials.py with USER & PASSWORD
